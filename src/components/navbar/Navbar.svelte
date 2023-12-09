@@ -20,7 +20,7 @@
 				{#if runner.Statut === 'enable'}
 					<Runner
 						firstName={runner.Prenom}
-						login={runner.Prenom.substring(0, 2).toUpperCase()}
+						login={runner.monogramme.toUpperCase() ?? '??'}
 						url={`/runner/${runner.id}`}
 						{...runner}
 					/>
