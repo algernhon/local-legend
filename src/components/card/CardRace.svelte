@@ -8,7 +8,7 @@
 	{#if title}
 		<header class="gap-2 mb-2">
 			<h2 class="text-2xl font-medium">
-				{title}
+				Estimation <span class="text-[#d54e4e] font-extrabold">{title}</span>
 			</h2>
 		</header>
 	{/if}

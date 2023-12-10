@@ -100,7 +100,7 @@
 	/>
 	<CardInput title="Calcul % VMA" data={data.res.VMA} metric="min/km" />
 	<CardRace
-		title="Estimation 5 km"
+		title="5 km"
 		icon={medal}
 		data={{
 			easy: calculateTime(data.res.VMA, 90, 5),
@@ -109,7 +109,7 @@
 		}}
 	/>
 	<CardRace
-		title="Estimation 10 km"
+		title="10 km"
 		icon={medal}
 		data={{
 			easy: calculateTime(data.res.VMA, 85, 10),
@@ -118,7 +118,7 @@
 		}}
 	/>
 	<CardRace
-		title="Estimation 20 km"
+		title="20 km"
 		icon={medal}
 		data={{
 			easy: calculateTime(data.res.VMA, 85, 20),
@@ -127,7 +127,7 @@
 		}}
 	/>
 	<CardRace
-		title="Estimation semi"
+		title="semi"
 		icon={medal}
 		data={{
 			easy: calculateTime(data.res.VMA, 85, 21.0975),
@@ -136,7 +136,7 @@
 		}}
 	/>
 	<CardRace
-		title="Estimation marathon"
+		title="marathon"
 		icon={medal}
 		data={{
 			easy: calculateTime(data.res.VMA, 75, 42.195),
