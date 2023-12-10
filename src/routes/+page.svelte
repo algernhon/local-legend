@@ -2,5 +2,5 @@
 	<title>Local Legend - Dashboard</title>
 </svelte:head>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Application en cours de développement</h1>
+<p>Patience, ça arrive très bientôt !</p>

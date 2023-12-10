@@ -30,7 +30,6 @@
 			<Title>Outils</Title>
 			<Link title="Calendrier" url="/" />
 			<Link title="Tableau" url="/" />
-			<Link title="Calcus" url="/" />
 		</nav>
 	</div>
 	<div class="flex flex-shrink-0 bg-gray-700 p-4">

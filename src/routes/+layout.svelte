@@ -7,6 +7,6 @@
 <nav class="w-60">
 	<Navbar runnersData={data} />
 </nav>
-<main class="flex-1 p-6 bg-[#f2f3f4]">
+<main class="flex-1 p-6 bg-[#f2f3f4] overflow-y-scroll">
 	<slot />
 </main>
