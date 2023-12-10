@@ -19,6 +19,7 @@
 	import lungs from '$icons/lungs.svg';
 	import heartpulse from '$icons/heart-pulse.svg';
 	import personrunning from '$icons/person-running.svg';
+	import medal from '$icons/medal.svg';
 
 	$: fmcmax = calculateMaxHeartRate(calculateAge(data.res.Date_de_naissance), data.res.Sexe);
 </script>
@@ -97,9 +98,10 @@
 			{ title: '110%', value: calculatePace(data.res.VMA * 1.1) }
 		]}
 	/>
-	<CardInput title="Calcul % VMA" icon={stopwatch} data={data.res.VMA} metric="min/km" />
+	<CardInput title="Calcul % VMA" data={data.res.VMA} metric="min/km" />
 	<CardRace
 		title="Estimation 5 km"
+		icon={medal}
 		data={{
 			easy: calculateTime(data.res.VMA, 90, 5),
 			medium: calculateTime(data.res.VMA, 92.5, 5),
@@ -108,6 +110,7 @@
 	/>
 	<CardRace
 		title="Estimation 10 km"
+		icon={medal}
 		data={{
 			easy: calculateTime(data.res.VMA, 85, 10),
 			medium: calculateTime(data.res.VMA, 87.5, 10),
@@ -116,6 +119,7 @@
 	/>
 	<CardRace
 		title="Estimation 20 km"
+		icon={medal}
 		data={{
 			easy: calculateTime(data.res.VMA, 85, 20),
 			medium: calculateTime(data.res.VMA, 87.5, 20),
@@ -124,14 +128,16 @@
 	/>
 	<CardRace
 		title="Estimation semi"
+		icon={medal}
 		data={{
-			easy: calculateTime(data.res.VMA, 85, 21.1),
-			medium: calculateTime(data.res.VMA, 87.5, 21.1),
-			hard: calculateTime(data.res.VMA, 90, 21.1)
+			easy: calculateTime(data.res.VMA, 85, 21.0975),
+			medium: calculateTime(data.res.VMA, 87.5, 21.0975),
+			hard: calculateTime(data.res.VMA, 90, 21.0975)
 		}}
 	/>
 	<CardRace
 		title="Estimation marathon"
+		icon={medal}
 		data={{
 			easy: calculateTime(data.res.VMA, 75, 42.195),
 			medium: calculateTime(data.res.VMA, 77.5, 42.195),
