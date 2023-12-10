@@ -101,7 +101,6 @@
 	<CardInput title="Calcul % VMA" data={data.res.VMA} metric="min/km" />
 	<CardRace
 		title="5 km"
-		icon={medal}
 		data={{
 			easy: calculateTime(data.res.VMA, 90, 5),
 			medium: calculateTime(data.res.VMA, 92.5, 5),
@@ -110,7 +109,6 @@
 	/>
 	<CardRace
 		title="10 km"
-		icon={medal}
 		data={{
 			easy: calculateTime(data.res.VMA, 85, 10),
 			medium: calculateTime(data.res.VMA, 87.5, 10),
@@ -119,7 +117,6 @@
 	/>
 	<CardRace
 		title="20 km"
-		icon={medal}
 		data={{
 			easy: calculateTime(data.res.VMA, 85, 20),
 			medium: calculateTime(data.res.VMA, 87.5, 20),
@@ -128,7 +125,6 @@
 	/>
 	<CardRace
 		title="semi"
-		icon={medal}
 		data={{
 			easy: calculateTime(data.res.VMA, 85, 21.0975),
 			medium: calculateTime(data.res.VMA, 87.5, 21.0975),
@@ -137,7 +133,6 @@
 	/>
 	<CardRace
 		title="marathon"
-		icon={medal}
 		data={{
 			easy: calculateTime(data.res.VMA, 75, 42.195),
 			medium: calculateTime(data.res.VMA, 77.5, 42.195),
