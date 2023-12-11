@@ -36,10 +36,10 @@
 	<Card
 		title="LT"
 		icon={personrunning}
-		data={data.res.VMA ? parseFloat((data.res.VMA / 15.7).toFixed(2)) : 0}
+		data={data.res.VMA ? parseFloat((data.res.VMA / 15.9).toFixed(2)) : 0}
 		metric="LT"
 		progressBar
-		progressMinMax={[data.res.VMA, 15.7]}
+		progressMinMax={[data.res.VMA, 15.9]}
 	></Card>
 	<LongCard
 		span="5"
