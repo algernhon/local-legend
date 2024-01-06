@@ -13,7 +13,7 @@
 <article class="bg-white w-full rounded-2xl px-10 py-6 overflow-hidden relative">
 	{#if title}
 		<header class="gap-2 mb-4">
-			<h2 class="text-2xl font-medium">
+			<h2 class="text-xl font-medium">
 				{title}
 			</h2>
 		</header>
@@ -34,7 +34,7 @@
 			</div>
 		</div>
 		<div>
-			<span class="font-extrabold text-6xl">{calculatedValue}</span>
+			<span class="font-extrabold text-5xl">{calculatedValue}</span>
 			<span class="text-gray-500">{metric}</span>
 		</div>
 	</div>

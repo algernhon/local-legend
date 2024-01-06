@@ -10,7 +10,7 @@
 >
 	{#if title}
 		<header class="gap-2">
-			<h2 class="text-2xl font-medium">
+			<h2 class="text-xl font-medium">
 				{title}
 			</h2>
 		</header>
@@ -20,7 +20,7 @@
 			<div class="flex flex-col">
 				<span class="uppercase">{item.title}</span>
 				<div>
-					<span class="font-extrabold text-6xl">{item.value}</span>
+					<span class="font-extrabold text-5xl">{item.value}</span>
 					<span class="text-gray-500">{item.metric}</span>
 				</div>
 				<div>

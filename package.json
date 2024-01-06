@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@directus/sdk": "^13.0.2"
+		"@directus/sdk": "^13.0.2",
+		"strava-v3": "^2.2.0"
 	}
 }

@@ -6,7 +6,7 @@
 <article class="bg-white w-full rounded-2xl px-10 py-6 overflow-hidden relative col-span-4">
 	{#if title}
 		<header class="gap-2">
-			<h2 class="text-2xl font-medium">
+			<h2 class="text-xl font-medium">
 				{title}
 			</h2>
 		</header>

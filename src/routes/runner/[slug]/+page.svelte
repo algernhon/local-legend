@@ -1,5 +1,6 @@
 <script>
 	export let data;
+
 	import {
 		calculateMaxHeartRate,
 		calculateAge,
@@ -102,41 +103,68 @@
 	<CardRace
 		title="5 km"
 		data={{
-			easy: calculateTime(data.res.VMA, 90, 5),
-			medium: calculateTime(data.res.VMA, 92.5, 5),
-			hard: calculateTime(data.res.VMA, 95, 5)
+			easy: { time: calculateTime(data.res.VMA, 90, 5), pace: calculatePace(data.res.VMA * 0.9) },
+			medium: {
+				time: calculateTime(data.res.VMA, 92.5, 5),
+				pace: calculatePace(data.res.VMA * 0.925)
+			},
+			hard: { time: calculateTime(data.res.VMA, 95, 5), pace: calculatePace(data.res.VMA * 0.95) }
 		}}
 	/>
 	<CardRace
 		title="10 km"
 		data={{
-			easy: calculateTime(data.res.VMA, 85, 10),
-			medium: calculateTime(data.res.VMA, 87.5, 10),
-			hard: calculateTime(data.res.VMA, 90, 10)
+			easy: { time: calculateTime(data.res.VMA, 85, 10), pace: calculatePace(data.res.VMA * 0.85) },
+			medium: {
+				time: calculateTime(data.res.VMA, 87.5, 10),
+				pace: calculatePace(data.res.VMA * 0.875)
+			},
+			hard: { time: calculateTime(data.res.VMA, 90, 10), pace: calculatePace(data.res.VMA * 0.9) }
 		}}
 	/>
 	<CardRace
 		title="20 km"
 		data={{
-			easy: calculateTime(data.res.VMA, 85, 20),
-			medium: calculateTime(data.res.VMA, 87.5, 20),
-			hard: calculateTime(data.res.VMA, 90, 20)
+			easy: { time: calculateTime(data.res.VMA, 80, 20), pace: calculatePace(data.res.VMA * 0.8) },
+			medium: {
+				time: calculateTime(data.res.VMA, 82.5, 20),
+				pace: calculatePace(data.res.VMA * 0.825)
+			},
+			hard: { time: calculateTime(data.res.VMA, 85, 20), pace: calculatePace(data.res.VMA * 0.85) }
 		}}
 	/>
 	<CardRace
 		title="semi"
 		data={{
-			easy: calculateTime(data.res.VMA, 85, 21.0975),
-			medium: calculateTime(data.res.VMA, 87.5, 21.0975),
-			hard: calculateTime(data.res.VMA, 90, 21.0975)
+			easy: {
+				time: calculateTime(data.res.VMA, 80, 21.0975),
+				pace: calculatePace(data.res.VMA * 0.8)
+			},
+			medium: {
+				time: calculateTime(data.res.VMA, 82.5, 21.0975),
+				pace: calculatePace(data.res.VMA * 0.825)
+			},
+			hard: {
+				time: calculateTime(data.res.VMA, 85, 21.0975),
+				pace: calculatePace(data.res.VMA * 0.85)
+			}
 		}}
 	/>
 	<CardRace
 		title="marathon"
 		data={{
-			easy: calculateTime(data.res.VMA, 75, 42.195),
-			medium: calculateTime(data.res.VMA, 77.5, 42.195),
-			hard: calculateTime(data.res.VMA, 80, 42.195)
+			easy: {
+				time: calculateTime(data.res.VMA, 75, 42.195),
+				pace: calculatePace(data.res.VMA * 0.75)
+			},
+			medium: {
+				time: calculateTime(data.res.VMA, 77.5, 42.195),
+				pace: calculatePace(data.res.VMA * 0.775)
+			},
+			hard: {
+				time: calculateTime(data.res.VMA, 80, 42.195),
+				pace: calculatePace(data.res.VMA * 0.8)
+			}
 		}}
 	/>
 </section>

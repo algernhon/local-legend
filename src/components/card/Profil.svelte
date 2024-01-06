@@ -15,7 +15,7 @@
 
 		<h1 class="flex flex-col">
 			<span>Runner</span>
-			<span class="text-2xl font-extrabold">{name}</span>
+			<span class="text-xl font-extrabold">{name}</span>
 		</h1>
 	</div>
 	<slot />
