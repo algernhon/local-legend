@@ -1,6 +1,19 @@
 <script>
 	export let data;
 
+    if (typeof data === 'undefined') {
+        data = {
+            res: {
+                prenom: 'John',
+                monogramme: 'J',
+                image_de_fond: 'https://source.unsplash.com/random/800x600',
+                VMA: 15.9,
+                sexe: 'M',
+                date_de_naissance: '1990-01-01'
+            }
+        };
+    }
+
 	import {
 		calculateMaxHeartRate,
 		calculateAge,
@@ -22,15 +35,15 @@
 	import personrunning from '$icons/person-running.svg';
 	import medal from '$icons/medal.svg';
 
-	$: fmcmax = calculateMaxHeartRate(calculateAge(data.res.Date_de_naissance), data.res.Sexe);
+	$: fmcmax = calculateMaxHeartRate(calculateAge(data.res.date_de_naissance), data.res.sexe);
 </script>
 
 <svelte:head>
-	<title>Local Legend - Fiche {data.res.Prenom}</title>
+	<title>Local Legend - Fiche {data.res.prenom}</title>
 </svelte:head>
 
 <section class="grid auto-rows-[minmax(0,_12rem)] grid-cols-3 xl:grid-cols-5 w-full gap-4">
-	<Profil name={data.res.Prenom} monogram={data.res.monogramme} image={data.res.image_de_fond} />
+	<Profil name={data.res.prenom} monogram={data.res.monogramme} image={data.res.image_de_fond} />
 	<Card title="VMA" icon={stopwatch} data={data.res.VMA ?? 0} metric="km/h" />
 	<Card title="VO2max" icon={lungs} data={calculateVO2max(data.res.VMA)} metric="ml/mn/kg" />
 	<Card title="FCMax" icon={heartpulse} data={fmcmax} metric="ml/mn/kg" />
